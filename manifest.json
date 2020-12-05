@@ -1,0 +1,18 @@
+{
+    "name": "YouTube auto close on video end (strict)",
+    "short_name": "YouTube auto close",
+    "version": "1.0",
+    "description": "The Youtube tab closes when a YouTube video ends, to avoid getting distracted by the following ones.",
+    "manifest_version": 1,
+    "author": "Enevevet",
+    "content_scripts": [{
+        "matches": ["*://*.youtube.com/*", "*://youtube.com/*"],
+        "js": ["main.js"],
+        "match_about_blank": false,
+        "run_at": "document_end"
+    }],
+    "background": {
+        "scripts": ["back.js"]
+    },
+    "permissions": ["tabs"]
+}
