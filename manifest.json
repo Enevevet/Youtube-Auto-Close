@@ -3,7 +3,7 @@
     "short_name": "YouTube auto close",
     "version": "1.0",
     "description": "The Youtube tab closes when a YouTube video ends, to avoid getting distracted by the following ones.",
-    "manifest_version": 1,
+    "manifest_version": 2,
     "author": "Enevevet",
     "content_scripts": [{
         "matches": ["*://*.youtube.com/*", "*://youtube.com/*"],
